@@ -1,0 +1,227 @@
+.budy{ 
+    height: 100%; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(to bottom,#68eacc 0%, #497be8 100% );
+    padding-top: 1px;
+}
+
+.container{
+    width: 100%;
+    height: 100hv;
+    position: relative;
+}
+
+.container-info{
+    width: 550px;
+    height: 700px;
+    display: flex;
+    color: #777;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin: 6em auto;
+    border: 3px solid #497be8;
+    box-shadow:
+        2.5px 1.7px 3.2px rgba(0, 0, 0, 0.082),
+        6px 4.2px 7.6px rgba(0, 0, 0, 0.117),
+        11.3px 7.9px 14.3px rgba(0, 0, 0, 0.145),
+        20.1px 14.1px 25.5px rgba(0, 0, 0, 0.173),
+        37.6px 26.3px 47.6px rgba(0, 0, 0, 0.208),
+        90px 63px 114px rgba(0, 0, 0, 0.29);
+}
+
+.titulo{
+    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: 1000;
+}
+
+.redes{
+    width: 400px;
+    display: flex;
+    justify-content: 100px;
+}
+
+.texto{
+    color: black;
+    font-weight: 1000;
+}
+
+.inicioSocial{
+    width: 400px;
+    height: 70px;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.inicioSocial img{
+    position: relative;
+    width: 26px;
+    height: 25px;
+}
+
+.inicioSocial button{
+    position: relative;
+    background-color: whitesmoke;
+    border: none;
+    cursor: pointer;
+}
+
+.container-info .o{
+    font-size: 35px;
+    margin-top: 25px;
+}
+
+.container-inputs {
+    position: relative;
+    height: 55%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+}
+  
+.usuario{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #497be8 solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #497be8;
+}
+  
+.usuario:focus,
+.usuario:valid {
+    outline: 0;
+    border-bottom-color: #68eacc;
+}
+  
+.lblUsuario{
+    position: absolute;
+    top: 35px;
+    left: 0;
+    pointer-events: none;
+}
+  
+.lblUsuario span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    color: #497be8;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  
+.usuario:focus+ .lblUsuario span,
+.usuario:valid+ .lblUsuario span {
+    color: #68eacc;
+    transform: translateY(-30px);
+}
+  
+.password{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #497be8 solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #497be8;
+}
+  
+.password:focus,
+.password:valid {
+    outline: 0;
+    border-bottom-color: #68eacc;
+}
+  
+.lblPassword {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    pointer-events: none;
+}
+  
+.lblPassword span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    color: #497be8;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  
+.password:focus+ .lblPassword span,
+.password:valid+ .lblPassword span {
+    color: #68eacc;
+    transform: translateY(-30px);
+}
+
+
+.ingresar {
+    width: 80%;
+    height: 60px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background-color: #6d92e2;
+    cursor: pointer;
+    border-color: #6d92e2;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.ingresar:hover {
+    background-color: #68eacc;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+  
+.ingresar:active {
+    transform: translateY(-1px);
+}
+
+
+.container-inputs p{
+    margin: 0%;
+}
+
+.resaltar{
+    color: #88cbbb;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 599){
+
+    .container{
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        height: 400px;
+        background-color: whitesmoke;
+        border-radius: 20px;
+        box-shadow:
+            2.5px 1.7px 3.2px rgba(0, 0, 0, 0.082),
+            6px 4.2px 7.6px rgba(0, 0, 0, 0.117),
+            11.3px 7.9px 14.3px rgba(0, 0, 0, 0.145),
+            20.1px 14.1px 25.5px rgba(0, 0, 0, 0.173),
+            37.6px 26.3px 47.6px rgba(0, 0, 0, 0.208),
+            90px 63px 114px rgba(0, 0, 0, 0.29);
+    }
+
+}

@@ -1,0 +1,61 @@
+<div class = "budy">
+
+    <header class = "container">
+  
+      <div class = "container-info">
+  
+        <h1 class = "titulo">Iniciar Sesion</h1>
+  
+        <div class = "redes">
+  
+          <div class = "inicioSocial">
+            <button type = "button" (click) = "googleAuth()">
+              <img src = "https://img.icons8.com/color/480/google-logo.png" alt = "google" >
+            </button>
+          </div>
+  
+          <div class = "inicioSocial">
+            <button type = "button" (click) = "facebookAuth()">
+              <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png" alt = "facebook" >
+            </button>
+          </div>
+  
+          <div class = "inicioSocial" (click) = "githubAuth()">
+            <button type = "button" >
+              <img src = "https://th.bing.com/th/id/R.fd7488b9cd58ce4cb449553eeabafce8?rik=TtPJQ%2f0Fbz0pJA&riu=http%3a%2f%2fpngimg.com%2fuploads%2fgithub%2fgithub_PNG71.png&ehk=zM%2fou5KNpuW%2fnJtQ6WM8xHk6PSBpVyeA%2fdgqAcBqpHs%3d&risl=&pid=ImgRaw&r=0" alt = "github" >
+            </button>
+          </div>
+  
+          <div class = "inicioSocial" (click) = "twitterAuth()">
+            <button type = "button">
+              <img src = "https://th.bing.com/th/id/R.a34eac9d68791b82d0d5f25b3656aba4?rik=oXFf8u8fl6R9Bg&riu=http%3a%2f%2f1000marcas.net%2fwp-content%2fuploads%2f2019%2f11%2fTwitter-logo.png&ehk=vI1p%2bl7Q%2fOYqyt6K6KaRzAxSvowlRA%2bDKZl3A%2fftSt0%3d&risl=&pid=ImgRaw&r=0" alt = "twitter" >
+            </button>
+          </div>
+  
+        </div>
+  
+        <p class = "o">ó</p>
+  
+        <form class = "container-inputs" [formGroup] = "formularioLogin">
+
+          <input class = "usuario" type="value" required="" formControlName = "mail">
+          <label class = "lblUsuario">
+              <span style="transition-delay:0ms">U</span><span style="transition-delay:50ms">s</span><span style="transition-delay:100ms">u</span><span style="transition-delay:150ms">a</span><span style="transition-delay:200ms">r</span><span style="transition-delay:250ms">i</span><span style="transition-delay:300ms">o</span>
+          </label>
+
+          <input class = "password" type="password" required="" formControlName = "password">
+          <label class = "lblPassword">
+              <span style="transition-delay:0ms">C</span><span style="transition-delay:50ms">o</span><span style="transition-delay:100ms">n</span><span style="transition-delay:150ms">t</span><span style="transition-delay:200ms">r</span><span style="transition-delay:250ms">a</span><span style="transition-delay:300ms">s</span><span style="transition-delay:350ms">e</span><span style="transition-delay:400ms">ñ</span><span style="transition-delay:450ms">a</span>
+          </label>
+
+          <span class = "ojoicon"><i class = "fa fa-eye"></i></span>
+          <button class = "ingresar" (click) = "singIn()">Login</button>
+          <p>No tiene una cuenta? <span class = "resaltar" (click) = "registro()">Registrate</span></p>
+  
+        </form>
+  
+      </div>
+    
+    </header>
+
+</div>

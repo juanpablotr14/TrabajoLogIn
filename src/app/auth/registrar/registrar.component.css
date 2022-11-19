@@ -1,0 +1,171 @@
+.budy { 
+    height: 100vh;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(to bottom,#497be8 0%, #68eacc 100% );
+    color: #777;
+    padding-top: 1px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 510px;
+    height: 650px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin: 10em auto;
+    border: 3px solid #497be8;
+    box-shadow:
+        2.5px 1.7px 3.2px rgba(0, 0, 0, 0.082),
+        6px 4.2px 7.6px rgba(0, 0, 0, 0.117),
+        11.3px 7.9px 14.3px rgba(0, 0, 0, 0.145),
+        20.1px 14.1px 25.5px rgba(0, 0, 0, 0.173),
+        37.6px 26.3px 47.6px rgba(0, 0, 0, 0.208),
+        90px 63px 114px rgba(0, 0, 0, 0.29);
+}
+
+.container-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.info{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.titulo{
+    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: 1000;
+}
+
+.texto{
+    color: black;
+    font-weight: 1000;
+}
+
+.container-info {
+    font-size: 35px;
+    margin-top: 25px;
+}
+
+.container-inputs{
+    height: 55%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.container-buttons{
+    height: 100px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input{
+    width: 90%;
+    height: 33px;
+    font-size: 18px;
+}
+
+.Registrar{
+    width: 100%;
+    height: 50px;
+    margin-top: 18px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #777;
+    background-color: #fff;
+    border: 2px solid #6d92e2;
+    border-radius: 6px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.Registrar:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    border: none;
+    transform: translateY(-7px);
+}
+  
+.Registrar:active {
+    transform: translateY(-1px);
+}
+
+.volver{
+    width: 100%;
+    height: 50px;
+    margin-top: 18px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    background-color: #6d92e2;
+    border: 2px solid #6d92e2;
+    border-radius: 6px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.volver:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    border: none;
+    transform: translateY(-7px);
+}
+  
+.volver:active {
+    transform: translateY(-1px);
+}
+
+.input{
+    padding: 0 18px;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: 500;
+    border: 2px solid #6d92e2;
+}
+
+.input:hover{
+    border: 2px solid #68eacc;
+}
+
+
+@media screen and (max-width: 599){
+
+    .container{
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        height: 400px;
+        background-color: whitesmoke;
+        border-radius: 20px;
+        box-shadow:
+            2.5px 1.7px 3.2px rgba(0, 0, 0, 0.082),
+            6px 4.2px 7.6px rgba(0, 0, 0, 0.117),
+            11.3px 7.9px 14.3px rgba(0, 0, 0, 0.145),
+            20.1px 14.1px 25.5px rgba(0, 0, 0, 0.173),
+            37.6px 26.3px 47.6px rgba(0, 0, 0, 0.208),
+            90px 63px 114px rgba(0, 0, 0, 0.29);
+    }
+
+}

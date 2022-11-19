@@ -1,0 +1,151 @@
+<div class = "budy">
+
+    <div class = "barraLateral">
+
+        <div class = "userData">
+
+            <img [src] = "image" class = "imagen">
+            
+            <div class = "texto">
+                <p class = "userText">User:</p>
+                <p class = "userName">{{nombre}}</p>
+                <p class = "userText">Id:</p>
+                <p class = "userId">{{uid}}</p>
+            </div>
+
+        </div>
+
+        <div class = "registrar">
+
+            <button class = "botonRegistrar" (click)="visibilidadRegistro()">Registrar/Actualizar Usuario</button>
+
+        </div>
+
+        <div class = "listaUsuarios">
+
+            <button class = "botonLista" (click)="visibilidadLista()">Lista de Usuarios</button>
+
+        </div>
+
+        <div class = "eliminarUsuario">
+
+            <button class = "botonEliminar" (click)="visibilidadEliminar()">Eliminar Usuario</button>
+
+        </div>
+
+        <div class = "logOut">
+
+            <button class = "botonSalida" (click) = "logOut()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span>Cerrar Sesión</span>
+            </button>
+
+        </div>
+
+    </div>
+
+    <div *ngIf = "mostrarLista" class = "panel-Data">
+
+        <div class = "container-lista">
+
+            <p>Usuario Admin:</p>
+
+            <table class = "listaUsers">
+
+                <tr>
+                    <th>Imagen:</th>
+                    <th>Usuario:</th>
+                    <th>ID:</th>
+                </tr>
+                <tr>
+                    <td><img [src] = "image" class = "imagenU"></td>
+                    <td>{{nombre}}</td>
+                    <td>{{uid}}</td>
+                </tr>
+
+            </table>
+
+            <p>Lista de Usuarios registrados:</p>
+
+            <table class = "listaUsers" >
+
+                <tr>
+                    <th>Imagen:</th>
+                    <th>Nombre Usuario:</th>
+                    <th>Nombre:</th>
+                    <th>Apellidos:</th>
+                    <th>Edad:</th>
+                    <th>Dirección:</th>
+                    <th>Telefono:</th>
+                </tr>
+                <tr *ngFor = "let user of value" >
+                    <td><img [src] = "user.profile_picture"></td>
+                    <td>{{user.nombreUsuario}}</td>
+                    <td>{{user.nombre}}</td>
+                    <td>{{user.apellidos}}</td>
+                    <td>{{user.edad}}</td>
+                    <td>{{user.direccion}}</td>
+                    <td>{{user.telefono}}</td>
+                </tr>
+
+            </table>
+
+        </div>
+        
+    </div>
+
+    <div *ngIf = "mostrarRegistro" class = "registro-User">
+
+        <div class = "container-Registro">
+
+            <p>Formulario Usuario:</p>
+            <h2>(Al actualizar informacion el correo no se cambia!)</h2>
+            <h3>Ingrese los datos solicitados:</h3>
+
+            <form #RegisterForm = "ngForm" class = "formularioUser">
+
+                <input class = "input" type = "text" ngModel name = "username" placeholder = "Nombre de Usuario">
+                <input class = "input" type = "text" ngModel name = "nombre" placeholder = "Nombre">
+                <input class = "input" type = "text" ngModel name = "apellidos" placeholder = "Apellidos">
+                <input class = "input" type = "text" ngModel name = "edad" placeholder = "Edad">
+                <input class = "input" type = "text" ngModel name = "telefono" placeholder = "N° Telefono">
+                <input class = "input" type = "text" ngModel name = "direccion" placeholder = "Dirección">
+                <input class = "input" type = "email" ngModel name = "correo" placeholder = "Correo Electronico">
+                <input class = "input" type = "text" ngModel name = "imagen" placeholder = "Link de la imagen">
+
+            </form>
+
+        </div>
+        
+        <div class = "botonesRegistro">
+
+            <button class = "botonRegistro" (click) = "registroUser(RegisterForm.value)" >Registrar</button>
+            <button class = "botonActualizar" (click) = "updateUser(RegisterForm.value)" >Actualizar</button>
+
+        </div>
+
+    </div>
+
+    <div *ngIf = "eliminarMostrar" class = "eliminar-User">
+
+        <div class = "container-Eliminar">
+
+            <p>Eliminar Usuario Registrado</p>
+            <h1>Ingrese el nombre de usuario para eliminarlo:</h1>
+
+            <form #EliminatedForm = "ngForm" (ngSubmit) = "eliminarUser(EliminatedForm.value)" class = "containerEliminar">
+
+                <input class = "input" type = "text" ngModel name = "nombre" placeholder = "Nombre">
+                <input class = "botonEliminarUsuario" type = "submit" value = "Eliminar">
+
+            </form>
+
+
+        </div>
+
+    </div>
+
+</div>
